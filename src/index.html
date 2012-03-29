@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="resources/jquery.min.js"></script>
+    <script type="text/javascript" src="resources/mustache.js"></script>
+    <script type="text/javascript" src="weather.js"></script>
+    <link rel="stylesheet" type="text/css" href="resources/style.css">
+  </head>
+  <body>
+    <script type="x-mustache-template" id="forecast_information_tmpl">
+      <span>Forecast for {{city}}</span><br/>
+      <span>{{forecast_date}}</span>
+    </script>
+    <script type="x-mustache-template" id="current_conditions_tmpl">
+      <table>
+          <tr>
+              <td><img src="{{icon}}"></td>
+              <td>
+                  <div>{{condition}}</div>
+                  <div>{{temp_f}}&deg;F</div>
+                  <div>{{humidity}}</div>
+                  <div>{{wind_condition}}</div>
+              </td>
+          </tr>
+      </table>
+    </script>
+    <script type="x-mustache-template" id="forecast_conditions_tmpl">
+      {{#conditions}}
+      <td>
+          <h2>{{day_of_week}}</h2>
+          <img src="{{icon}}">
+          <h6>{{condition}}</h6>
+          <h6>Low: {{low}}&deg;F</h6>
+          <h6>High: {{high}}&deg;F</h6>
+      </td>
+      {{/conditions}}
+    </script>
+    <div id="forecast_information"></div>
+
+    <div id="current_conditions"></div>
+
+    <div id="forecast_conditions">
+        <table>
+            <tr>
+            </tr>
+        </table>
+    </div>
+    <div id="options">
+        <div id="options_header">Select City</div>
+        <select id="city_menu"></select>
+    </div>
+  </body>
+</html>

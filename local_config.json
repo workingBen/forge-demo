@@ -1,0 +1,20 @@
+{
+	"general": {
+	},
+	"ios": {
+		"profiles": {
+			"DEFAULT": {
+				"provisioning_profile": ""
+			}
+		}
+	},
+	"android": {
+		"sdk": "/Users/bpellow/android/android-sdk-macosx",
+		"profiles": {
+			"DEFAULT": {
+				"keystore": "",
+				"keyalias": ""
+			}
+		}
+	}
+}

@@ -1,0 +1,8 @@
+
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:id="@+id/linearLayout2" android:layout_width="match_parent" android:layout_height="50dp" android:baselineAligned="true" android:background="#38434E">
+            <Button android:text="Close" android:id="@+id/button1" android:layout_width="wrap_content" android:layout_height="match_parent"></Button>
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:text="" android:id="@+id/textView1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_gravity="top"></TextView>
+        </LinearLayout>
+        <WebView android:id="@+id/webView1" android:layout_width="match_parent" android:layout_height="match_parent"></WebView>
+    </LinearLayout>
