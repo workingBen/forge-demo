@@ -5,5 +5,5 @@
 #   watch(%r{file/path}) { `command(s)` }
 #
 guard 'shell' do
-  watch(%r{^src/(.+)}) {|m| `sed 's/<head>/<head><script src="\/forge\/all.js"><\/script>/g' #{m[0]} > #{m[0]}.new && mv #{m[0]}.new development/chrome/#{m[0]}` }
+  watch(%r{^src/(.+)}) {|m| `sed 'sX<head>X<head><script src=\'/forge/all.js\'></script>Xg' #{m[0]} > development/chrome/#{m[0]}.new && mv development/chrome/#{m[0]}.new development/chrome/#{m[0]}` }
 end
