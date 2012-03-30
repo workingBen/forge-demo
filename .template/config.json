@@ -1,0 +1,30 @@
+{
+	"platform_version": "v1.2",
+	"name": "demo2",
+	"author": "pellow@okcupidlabs.com",
+	"version": "0.1",
+	"description": "My Extension Description",
+  "permissions": ["tabs", "http://www.google.com/*"],
+	"background_files": [],
+	"browser_action": {
+		"default_title": "An example browser toolbar icon",
+		"default_popup": "index.html",
+		"default_icon": "img/logo-forge.png"
+	},
+	"activations": [
+		{
+			"patterns": ["http://*/*", "https://*/*"],
+			"styles": [],
+			"scripts": ["js/every-page.js"],
+			"run_at": "start",
+			"all_frames": false
+		}
+	],
+	"logging": {
+			"level": "INFO"
+	},
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": "resources/sun_19.png"
+  }
+}
