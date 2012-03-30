@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="io.trigger.forge44937ea8792211e1a41a12313d1adcbe"
-      android:versionCode="1333052682"
+      android:versionCode="1333061168"
       android:versionName="0.1">
     
     <uses-permission android:name="android.permission.INTERNET" />

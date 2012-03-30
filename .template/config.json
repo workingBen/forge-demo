@@ -5,7 +5,7 @@
 	"version": "0.1",
 	"description": "My Extension Description",
   "permissions": ["tabs", "http://www.google.com/*"],
-	"background_files": ["js/background.js"],
+	"background_files": [],
 	"browser_action": {
 		"default_title": "An example browser toolbar icon",
 		"default_popup": "index.html",
