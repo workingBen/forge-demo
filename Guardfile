@@ -6,4 +6,5 @@
 #
 guard 'shell' do
   watch(%r{^src/(.+)}) {|m| `sed 'sX<head>X<head><script src=\'/forge/all.js\'></script>Xg' #{m[0]} > development/chrome/#{m[0]}.new && mv development/chrome/#{m[0]}.new development/chrome/#{m[0]}` }
+  watch(%r{^src/(.+)}) {|m| `forge build; forge run android` }
 end
